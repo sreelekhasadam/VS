@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import Image from 'logo.PNG';
 
 const LoggedOutView = props => {
   if (!props.currentUser) {
@@ -78,12 +77,9 @@ class Header extends React.Component {
         <div className="container">
 
           <Link to="/" className="navbar-brand">
-
-          <img src='/assets/images/logo.png' width="70" height="70" />
-           
-            </Link>
-
-
+            <img src="Assets/images/logo.png" width="70" height="70" />
+          
+          </Link>
           <LoggedOutView currentUser={this.props.currentUser} />
 
           <LoggedInView currentUser={this.props.currentUser} />
